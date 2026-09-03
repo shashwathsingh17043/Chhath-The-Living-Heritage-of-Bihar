@@ -1,0 +1,17 @@
+{
+  "noVisibleYouTubePass": true,
+  "consoleElements": {
+    "found": true,
+    "hasNowPlayingHeader": true,
+    "hasOfficialAudioBadge": true,
+    "hasAttribution": false,
+    "hasSlider": false,
+    "hasArtwork": false,
+    "hasControls": false
+  },
+  "hoPass": false,
+  "seekPass": true,
+  "switchPass": true,
+  "nextPass": true,
+  "prevPass": true
+}

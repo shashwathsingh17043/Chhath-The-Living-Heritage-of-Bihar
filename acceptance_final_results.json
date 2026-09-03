@@ -1,0 +1,108 @@
+{
+  "playerCreatedOnce": true,
+  "persistentPlayerPass": true,
+  "testBResult": "PASS",
+  "testDResult": "PASS",
+  "testEResult": "PASS",
+  "testFGResult": "PASS",
+  "testIJResult": "PASS",
+  "testKResult": "PASS",
+  "songsTable": [
+    {
+      "num": 1,
+      "song": "Pahile Pahil Chhathi Maiya",
+      "songId": "pahile-pahil-sharda",
+      "ytId": "DG8F-csoRAQ",
+      "playlistPos": "NOT IN PLAYLIST",
+      "correctRecording": "PASS",
+      "startPoint": "53s (Intro skipped)",
+      "progress": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "num": 2,
+      "song": "Ho Deenanath",
+      "songId": "ho-deenanath-sharda",
+      "ytId": "QNA_wINDlF8",
+      "playlistPos": "Position 2",
+      "correctRecording": "PASS",
+      "startPoint": "33s (Intro skipped)",
+      "progress": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "num": 3,
+      "song": "Uga Ho Surujdev",
+      "songId": "uga-ho-surujdev-anuradha",
+      "ytId": "Up0VABP0lo8",
+      "playlistPos": "Position 6",
+      "correctRecording": "PASS",
+      "startPoint": "36s (Intro skipped)",
+      "progress": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "num": 4,
+      "song": "Marbo Re Sugwa Dhanukh Se",
+      "songId": "marbo-re-sugwa-anuradha",
+      "ytId": "Rd0Qz4M89zo",
+      "playlistPos": "NOT IN PLAYLIST",
+      "correctRecording": "PASS",
+      "startPoint": "25s (Intro skipped)",
+      "progress": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "num": 5,
+      "song": "Kelwa Ke Paat Par",
+      "songId": "kelwa-ke-paat-sharda-jb",
+      "ytId": "knZ8b5YnQiY",
+      "playlistPos": "Position 4",
+      "correctRecording": "PASS",
+      "startPoint": "28s (Intro skipped)",
+      "progress": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "num": 6,
+      "song": "Chhathi Maiya Jukebox",
+      "songId": "chhathi-maiya-sharda-jb",
+      "ytId": "BsAFCc901MM",
+      "playlistPos": "Position 3",
+      "correctRecording": "PASS",
+      "startPoint": "10s (Intro skipped)",
+      "progress": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "num": 7,
+      "song": "Ghatiye Swarg Lagela",
+      "songId": "ghatiye-swarg-pawan",
+      "ytId": "AJsZwUqq6Sg",
+      "playlistPos": "NOT IN PLAYLIST",
+      "correctRecording": "PASS",
+      "startPoint": "24s (Intro skipped)",
+      "progress": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "num": 8,
+      "song": "Patna Ke Ghat",
+      "songId": "patna-ke-ghat-pawan",
+      "ytId": "3PGJVwuVDOg",
+      "playlistPos": "NOT IN PLAYLIST",
+      "correctRecording": "PASS",
+      "startPoint": "14s (Intro skipped)",
+      "progress": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    }
+  ]
+}

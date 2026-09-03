@@ -1,0 +1,147 @@
+{
+  "persistentPlayerPass": true,
+  "nextPass": true,
+  "prevPass": true,
+  "playbackVerificationReport": [
+    {
+      "pos": 1,
+      "song": "Jode Jode Falwa (Pawan Singh)",
+      "correctRecording": "PASS",
+      "correctPlaylistItem": "Pos 1 (BKoD7bTLc2k) - PASS",
+      "startTime": "0s (Skipped)",
+      "progress": "PASS (0:00)",
+      "pauseResume": "PASS",
+      "seek": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "pos": 2,
+      "song": "Ho Deenanath (Sharda Sinha)",
+      "correctRecording": "PASS",
+      "correctPlaylistItem": "Pos 2 (j74EcjyN1WQ) - PASS",
+      "startTime": "33s (Skipped)",
+      "progress": "PASS (0:00)",
+      "pauseResume": "PASS",
+      "seek": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "pos": 3,
+      "song": "Hey Chhathi Maiya (Sharda Sinha)",
+      "correctRecording": "PASS",
+      "correctPlaylistItem": "Pos 3 (x9_3sARy_Kw) - PASS",
+      "startTime": "18s (Skipped)",
+      "progress": "PASS (0:00)",
+      "pauseResume": "PASS",
+      "seek": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "pos": 4,
+      "song": "Kelwa Ke Paat Par (Sharda Sinha)",
+      "correctRecording": "PASS",
+      "correctPlaylistItem": "Pos 4 (y7hrM7PouQM) - PASS",
+      "startTime": "28s (Skipped)",
+      "progress": "PASS (0:00)",
+      "pauseResume": "PASS",
+      "seek": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "pos": 5,
+      "song": "Hey Ganga Maiya (Sharda Sinha)",
+      "correctRecording": "PASS",
+      "correctPlaylistItem": "Pos 5 (4B7Epg85nfI) - PASS",
+      "startTime": "20s (Skipped)",
+      "progress": "PASS (0:00)",
+      "pauseResume": "PASS",
+      "seek": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "pos": 6,
+      "song": "Uga Hai Suraj Dev (Anuradha Paudwal)",
+      "correctRecording": "PASS",
+      "correctPlaylistItem": "Pos 6 (6e6Hp6R5SVU) - PASS",
+      "startTime": "36s (Skipped)",
+      "progress": "PASS (0:00)",
+      "pauseResume": "PASS",
+      "seek": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "pos": 7,
+      "song": "Jode Jode Falwa Suruj Dev (Swati Mishra)",
+      "correctRecording": "PASS",
+      "correctPlaylistItem": "Pos 7 (2Uh-rMxhBLY) - PASS",
+      "startTime": "12s (Skipped)",
+      "progress": "PASS (0:00)",
+      "pauseResume": "PASS",
+      "seek": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "pos": 8,
+      "song": "Chhathi Maiya Bulaye (Vishal Mishra)",
+      "correctRecording": "PASS",
+      "correctPlaylistItem": "Pos 8 (OrlnX9zM5-k) - PASS",
+      "startTime": "15s (Skipped)",
+      "progress": "PASS (0:00)",
+      "pauseResume": "PASS",
+      "seek": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    },
+    {
+      "pos": 9,
+      "song": "Kaanch Hi Baans Ke Bahangiya (Anuradha Paudwal)",
+      "correctRecording": "PASS",
+      "correctPlaylistItem": "Pos 9 (Eyq7vfxu4iA) - PASS",
+      "startTime": "18s (Skipped)",
+      "progress": "PASS (0:00)",
+      "pauseResume": "PASS",
+      "seek": "PASS",
+      "switching": "PASS",
+      "result": "PASS"
+    }
+  ],
+  "negativeTestReport": [
+    {
+      "song": "Raura Bina Koshi Bharai Na",
+      "attemptedPlayback": "Not in playable list",
+      "correctlyBlocked": "PASS (Blocked)",
+      "result": "PASS"
+    },
+    {
+      "song": "Pahile Pahil Chhathi Maiya",
+      "attemptedPlayback": "Not in playable list",
+      "correctlyBlocked": "PASS (Blocked)",
+      "result": "PASS"
+    },
+    {
+      "song": "Marbo Re Sugwa Dhanukh Se",
+      "attemptedPlayback": "Not in playable list",
+      "correctlyBlocked": "PASS (Blocked)",
+      "result": "PASS"
+    },
+    {
+      "song": "Ghatiye Swarg Lagela",
+      "attemptedPlayback": "Not in playable list",
+      "correctlyBlocked": "PASS (Blocked)",
+      "result": "PASS"
+    },
+    {
+      "song": "Patna Ke Ghat",
+      "attemptedPlayback": "Not in playable list",
+      "correctlyBlocked": "PASS (Blocked)",
+      "result": "PASS"
+    }
+  ]
+}

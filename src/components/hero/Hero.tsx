@@ -1,123 +1,98 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-[#FDFBF7] text-[#2C221E] pt-28 pb-16 md:pt-32 md:pb-24 border-b border-[#EADEC9] overflow-hidden font-inter">
-      {/* Subtle tactile paper texture */}
-      <div className="absolute inset-0 grain-overlay opacity-25 pointer-events-none z-0" />
+    <section className="relative min-h-[88vh] md:min-h-[92vh] flex items-end justify-center overflow-hidden font-sans border-b border-[#D8C5AF]">
+      {/* Background Documentary Photograph */}
+      <img
+        src="/assets/images/chhath-puja-1730718298.webp"
+        alt="Devotees offering Arghya at dawn standing in river waters with bamboo soop offerings"
+        className="absolute inset-0 w-full h-full object-cover object-[center_35%] md:object-[center_30%] scale-102 transition-transform duration-1000"
+        loading="eager"
+      />
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 w-full">
-        {/* Asymmetric 12-Column Editorial Spread */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16 items-center">
+      {/* Restrained cinematic gradient overlay for high text contrast while preserving image luminance */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#173E4F] via-[#2B1B16]/75 to-[#173E4F]/35 z-10" />
+
+      {/* Subtle tactile grain */}
+      <div className="absolute inset-0 grain-overlay opacity-20 pointer-events-none z-10" />
+
+      {/* Ambient sunrise radial glow */}
+      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-gradient-to-b from-[#E97824]/20 via-[#F1B84B]/10 to-transparent rounded-full blur-3xl pointer-events-none z-10" />
+
+      <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-20 w-full pt-32 pb-16 md:pb-20">
+        <div className="max-w-4xl space-y-6">
           
-          {/* Left Column: Curatorial Header & Narrative (7 cols) */}
-          <div className="lg:col-span-7 space-y-6">
-            
-            {/* Museum Accession & Tithi Metadata */}
-            <div className="flex flex-wrap items-center gap-2.5 text-[11px] font-mono text-[#7D6B58] border-b border-[#EADEC9] pb-3">
-              <span className="text-[#8E4A23] font-bold uppercase tracking-widest">
-                ARCHIVE PLATE 01
-              </span>
-              <span className="text-[#EADEC9]">•</span>
-              <span className="uppercase tracking-wider">
-                LIVING HERITAGE DOCUMENTATION
-              </span>
-              <span className="text-[#EADEC9]">•</span>
-              <span className="text-[#5C2E16] font-noto font-normal">
-                कार्तिक शुक्ल षष्ठी (Kartik Shukla)
-              </span>
-            </div>
-
-            {/* Asymmetric English Title with Devanagari Pair */}
-            <div className="space-y-1">
-              <div className="flex items-baseline gap-4 flex-wrap">
-                <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#2C221E] tracking-tight leading-[0.95]">
-                  Chhath
-                </h1>
-                <span className="font-yatra text-4xl sm:text-5xl text-[#8E4A23] font-normal select-none -translate-y-1">
-                  छठ
-                </span>
-              </div>
-              <p className="font-serif italic text-2xl sm:text-3xl text-[#8E4A23] font-normal tracking-wide">
-                Bihar Ki Jeevit Virasat
-              </p>
-            </div>
-
-            {/* Architectural Rule */}
-            <div className="h-[1.5px] bg-[#8E4A23] w-16" />
-
-            {/* Primary Curatorial Statement */}
-            <div className="space-y-3 max-w-2xl">
-              <p className="text-base sm:text-lg text-[#2C221E] leading-relaxed font-normal">
-                A living digital heritage archive dedicated to the Sun, ancient riparian ghats, austere fasting vows, and the priestless, democratic devotion of Bihar and Purvanchal.
-              </p>
-              <p className="font-noto text-xs sm:text-sm text-[#7D6B58] leading-relaxed italic">
-                सूर्य, नदी, घाट, व्रत, महाप्रसाद और लोक आस्था को समर्पित एक प्रामाणिक एवं सार्वजनिक पुरालेख।
-              </p>
-            </div>
-
-            {/* Editorial Navigation Buttons */}
-            <div className="pt-3 flex flex-wrap items-center gap-4 text-xs font-mono">
-              <Link
-                to="/four-days"
-                className="px-6 py-3.5 bg-[#8E4A23] hover:bg-[#6E3214] text-white font-semibold tracking-wider uppercase transition-colors inline-flex items-center gap-2 border border-[#8E4A23]"
-              >
-                <span>Enter the Exhibition · चार दिन</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
-              <Link
-                to="/heritage"
-                className="px-6 py-3.5 bg-white hover:bg-[#FAF7F0] text-[#2C221E] font-semibold tracking-wider uppercase transition-colors inline-flex items-center gap-2 border border-[#EADEC9] hover:border-[#8E4A23]"
-              >
-                <span>Explore Artifacts · सामग्री दीर्घा</span>
-              </Link>
-            </div>
-
-            {/* Curatorial metadata marginalia */}
-            <div className="pt-4 flex items-center gap-6 text-[10px] font-mono text-[#7D6B58] uppercase tracking-wider">
-              <div>STATUS: VERIFIED FIELD ARCHIVE</div>
-              <div>LOCATIONS: PATNA · DEO · KANDAHAS</div>
-              <div>ERA: LIVING CONTINUUM</div>
-            </div>
-
+          {/* Documentary Folio Metadata Plate */}
+          <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-[#2B1B16]/80 backdrop-blur-sm border border-[#D8C5AF]/40 text-[#FFF8EC] text-xs font-mono rounded-sm">
+            <span className="w-2 h-2 rounded-full bg-[#E97824] animate-pulse" />
+            <span className="text-[#F1B84B] font-bold uppercase tracking-widest text-[11px]">
+              DOCUMENTARY FOLIO 01
+            </span>
+            <span className="text-[#D8C5AF]/50">•</span>
+            <span className="text-[#FFF8EC]/90 text-[11px] font-hindi">
+              कार्तिक शुक्ल षष्ठी · Living Riparian Heritage
+            </span>
           </div>
 
-          {/* Right Column: Authentic Archival Plate (5 cols) */}
-          <div className="lg:col-span-5">
-            <div className="border border-[#EADEC9] bg-[#FAF7F0] p-3 sm:p-4 shadow-sm">
-              
-              {/* Unwashed, authentic photographic crop */}
-              <div className="relative aspect-[4/5] overflow-hidden border border-[#EADEC9] bg-[#2C221E]/5">
-                <img
-                  src="/assets/images/chhath-puja-lake.webp"
-                  alt="Devotees offering Sandhya Arghya at sunset standing chest-deep in water"
-                  className="w-full h-full object-cover object-center filter contrast-[1.02] brightness-[0.98]"
-                />
-                <div className="absolute top-3 right-3 bg-[#2C221E]/80 text-white px-2 py-0.5 text-[9px] font-mono uppercase tracking-widest backdrop-blur-xs">
-                  PLATE I · EVENING ARGHYS
-                </div>
-              </div>
+          {/* Bilingual Title Copy */}
+          <div className="space-y-2">
+            <span className="font-hindi text-xl sm:text-2xl md:text-3xl text-[#F1B84B] font-semibold block leading-normal py-1 tracking-normal">
+              छठ — सूर्य, जल और सामूहिक आस्था का महापर्व
+            </span>
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#FFF8EC] tracking-tight leading-[1.05]">
+              Chhath — A Living Celebration of Sun, Water and Devotion
+            </h1>
+          </div>
 
-              {/* Museum catalog caption */}
-              <div className="mt-3.5 px-1 space-y-1">
-                <div className="flex justify-between items-baseline text-[10px] font-mono text-[#7D6B58]">
-                  <span className="font-bold text-[#8E4A23]">FIG. 01: ARGHYS OFFERING</span>
-                  <span>PATNA, BIHAR</span>
-                </div>
-                <p className="font-serif italic text-xs text-[#5C2E16] leading-relaxed">
-                  &ldquo;Standing in holy river current holding the bamboo soop adorned with harvested grains and earthen lamps, offering prayers to the setting sun.&rdquo;
-                </p>
-                <div className="text-[9px] font-mono text-[#7D6B58]/80 pt-1 border-t border-[#EADEC9]/60">
-                  ACCESSION ID: CH-ARCH-001 · LIVING HERITAGE DOCUMENTATION
-                </div>
-              </div>
+          {/* Concise Curatorial Introduction */}
+          <p className="text-base sm:text-lg md:text-xl text-[#FFF8EC]/90 max-w-2xl font-normal leading-relaxed">
+            A living digital heritage archive dedicated to Bihar’s ancient solar pilgrimage, sacred riparian ghats, austere fasting vows, and priestless, democratic devotion.
+          </p>
 
+          {/* Action CTAs */}
+          <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono">
+            <Link
+              to="/four-days"
+              className="px-6 py-3.5 bg-[#E97824] hover:bg-[#F1B84B] text-[#2B1B16] font-bold tracking-wider uppercase transition-all duration-200 inline-flex items-center gap-2 shadow-lg shadow-[#E97824]/20 border border-[#E97824] hover:border-[#F1B84B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#173E4F] rounded-sm min-h-[44px]"
+            >
+              <span>Experience the Four Days · चार दिन</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <a
+              href="#introduction"
+              className="px-6 py-3.5 bg-[#FFF8EC]/10 hover:bg-[#FFF8EC]/20 text-[#FFF8EC] font-semibold tracking-wider uppercase transition-all duration-200 inline-flex items-center gap-2 border border-[#FFF8EC]/50 hover:border-[#FFF8EC] backdrop-blur-xs focus-visible:ring-2 focus-visible:ring-[#E97824] rounded-sm min-h-[44px]"
+            >
+              <span>Explore the Living Archive · पुरालेख</span>
+            </a>
+          </div>
+
+          {/* Archival documentary image caption */}
+          <div className="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-[#FFF8EC]/20 text-[11px] font-mono text-[#FFF8EC]/75">
+            <div>
+              <span>DOCUMENTARY IMAGE: Devotees offering Arghya at dawn in river waters</span>
+            </div>
+            <div className="hidden sm:block">
+              <span>LOCATION CONTEXT: BIHAR RIPARIAN BASIN</span>
             </div>
           </div>
 
         </div>
+
+        {/* Subtle Scroll Indicator */}
+        <div className="pt-8 flex justify-center">
+          <a
+            href="#introduction"
+            className="flex flex-col items-center gap-1 text-[11px] font-mono tracking-widest text-[#FFF8EC]/70 hover:text-[#FFF8EC] transition-colors focus-visible:ring-2 focus-visible:ring-[#E97824] p-1 rounded"
+            aria-label="Scroll down to Introduction section"
+          >
+            <span className="uppercase text-[10px]">Scroll to Begin Journey · नीचे देखें</span>
+            <ChevronDown className="w-4 h-4 animate-bounce" />
+          </a>
+        </div>
+
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700;800&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,44 +6,61 @@
 
 @layer base {
   body {
-    @apply bg-[#FDFBF7] text-[#2C221E] font-inter antialiased overflow-x-hidden selection:bg-[#8E4A23] selection:text-white;
+    @apply bg-[#FFF8EC] text-[#2B1B16] font-sans antialiased overflow-x-hidden selection:bg-[#E97824] selection:text-white;
+    font-size: 16px;
+    line-height: 1.65;
   }
   
   html {
     scroll-behavior: smooth;
   }
 
-  /* Refined museum typography rendering */
+  /* Accessible focus indicators for keyboard navigation */
+  :focus-visible {
+    outline: 2px solid #E97824;
+    outline-offset: 2px;
+  }
+
+  /* Headings: Cormorant Garamond for English, high contrast */
   h1, h2, h3, h4, h5, h6 {
-    @apply tracking-normal text-[#2C221E];
+    @apply font-serif text-[#2B1B16] tracking-tight;
   }
 }
 
 @layer utilities {
   /* Museum plate and archival framing */
   .museum-plate {
-    @apply border border-[#EADEC9] bg-white transition-all duration-300;
+    @apply border border-[#D8C5AF] bg-white transition-all duration-300 shadow-sm;
   }
 
   .museum-plate-subtle {
-    @apply border border-[#EADEC9] bg-[#FAF7F0] transition-all duration-300;
+    @apply border border-[#D8C5AF] bg-[#F5ECE0] transition-all duration-300;
   }
 
+  .source-parchment-panel {
+    @apply border border-[#D8C5AF] bg-[#F5ECE0] rounded-xl text-[#2B1B16];
+  }
+
+  /* Upgraded readable archival tags (WCAG compliant >= 11px) */
   .archival-tag {
-    @apply font-mono text-[9px] uppercase tracking-widest text-[#7D6B58];
+    @apply font-mono text-[11px] uppercase tracking-widest text-[#B9653B] font-semibold;
   }
 
   .archival-meta {
-    @apply font-mono text-[10px] text-[#7D6B58] tracking-wider;
+    @apply font-mono text-xs text-[#5C4A3E] tracking-wider;
   }
 
   .fine-rule {
-    @apply h-px bg-[#EADEC9] w-full;
+    @apply h-px bg-[#D8C5AF] w-full;
   }
 
-  /* Diya flicker keyframes */
+  /* Diya flicker & soft ambient glow */
   .diya-glow {
-    box-shadow: 0 0 20px 4px rgba(200, 122, 83, 0.25), 0 0 40px 10px rgba(142, 74, 35, 0.15);
+    box-shadow: 0 0 20px 4px rgba(233, 120, 36, 0.25), 0 0 40px 10px rgba(185, 101, 59, 0.15);
+  }
+
+  .sunrise-glow {
+    box-shadow: 0 0 60px 20px rgba(233, 120, 36, 0.18), 0 0 100px 40px rgba(241, 184, 75, 0.12);
   }
 }
 
@@ -58,12 +75,22 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #F4EFE6;
+  background: #F5ECE0;
 }
 ::-webkit-scrollbar-thumb {
-  background: #D9C8AE;
-  border-radius: 2px;
+  background: #D8C5AF;
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #8E4A23;
+  background: #E97824;
+}
+
+/* Respect user's motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

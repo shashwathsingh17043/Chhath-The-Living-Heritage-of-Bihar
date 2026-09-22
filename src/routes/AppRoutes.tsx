@@ -32,7 +32,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   }, [children]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#FDFBF7] text-[#2C221E] overflow-x-hidden">
+    <div className="flex flex-col min-h-screen bg-[#FFF8EC] text-[#2B1B16] font-sans overflow-x-hidden">
       <Navbar />
       <main className={`flex-1 transition-[padding] duration-200 ${currentSong ? "pb-28 sm:pb-32" : ""}`}>{children}</main>
       <MiniPlayer />
